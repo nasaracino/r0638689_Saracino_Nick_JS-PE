@@ -1,0 +1,331 @@
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap-4.5.3-dist/style.css" />
+    <link rel="stylesheet" href="css/bootstrap-4.5.3-dist/css/bootstrap.min.css" />
+    <title>Registreren</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registreer</h1>
+        <h5>Meld je aan bij Anoroc Services, wij beschermen jouw software tegen malware!</h5>
+        <div class="row">
+            <div class="col-lg-6">
+                <form name="mijnForm">
+                    <label for="voornaam" class="form-label">Voornaam</label>
+                    <input type="text" class="form-control" id="voornaam" placeholder="Uw voornaam">
+            </div>
+            <div class="col-lg-6">
+                <label for="naam" class="form-label">Naam</label>
+                <input type="text" class="form-control" id="naam" placeholder="Uw naam">
+            </div>
+            <div class="col-lg-6">
+                <label for="gebruikernaam" class="form-label aanpassen" id="labelGebruikersnaam">Gebruikersnaam</label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" class="form-control" id="gebruikersnaam" placeholder="rxxxxxxx">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <label for="email" class="aanpassen" id="labelEmail">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="col-lg-6">
+                <label for="wachtwoord">Wachtwoord</label>
+                <input type="password" class="form-control" id="wachtwoord">
+                <small id="wachtwoordHulp" class="form-text text-muted">Je wachtwoord moet minstens 8 tekens lang zijn.</small>
+            </div>
+            <div class="col-lg-6">
+                <label for="herhaalWachtwoord" class="aanpassen" id="labelHerhaalWachtwoord">Herhaal wachtwoord</label>
+                <input type="password" class="form-control" id="herhaalWachtwoord">
+            </div>
+            <div class="col-lg-12" id="formAdres">
+                <label for="adres" id="labelAdres" class="form-label">Adres</label>
+                <input type="text" class="form-control" id="adres" placeholder="Uw adres en huisnummer">
+            </div>
+            <div class="col-lg-4">
+                <label for="land" class="form-label aanpassen" id="labelLand">Land</label>
+                <select class="form-select" id="land">
+                    <option value="" selected disabled>Kies een land</option>
+                    <option value="Belgie">Belgie</option>
+                    <option value="Nederland">Nederland</option>
+                    <option value="Duitsland">Duitsland</option>
+                    <option value="Frankrijk">Frankrijk</option>
+                    <option value="Verenigde Koninkrijk">Verenigde Koninkrijk</option>
+                </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="provincie" class="form-label aanpassen" id="labelProvincie">Provincie</label>
+                <select class="form-select" id="provincie" aria-placeholder="Kies een land">
+                    <option value="" selected disabled>Kies een provincie</option>
+                    <option value="Antwerpen">Antwerpen</option>
+                    <option value="Henegouwen">Henegouwen</option>
+                    <option value="Limburg">Limburg</option>
+                    <option value="Luik">Luik</option>
+                    <option value="Luxemburg">Luxemburg</option>
+                    <option value="Namen">Namen</option>
+                    <option value="Oost-Vlaanderen">Oost-Vlaanderen</option>
+                    <option value="Vlaams-Brabant">Vlaams-Brabant</option>
+                    <option value="Waals-Brabant">Waals-Brabant</option>
+                    <option value="West-Vlaanderen">West-Vlaanderen</option>
+                </select>
+            </div>
+            <div class="col-lg-4">
+                <label for="postcode" class="form-label aanpassen" id="labelPostcode">Postcode</label>
+                <input type="number" class="form-control" id="postcode">
+            </div>
+            <div class="col-lg-12">
+                <hr/>
+            </div>
+            <div class="col-lg-4">
+                <h3>Hou me op de hoogte</h3>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="nieuwsbrief">
+                    <label class="form-check-label" for="nieuwsbrief">Inschrijven voor onze nieuwsbrief</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="voorwaarden">
+                    <label class="form-check-label" for="voorwaarden">Ik ga akkoord met de algemene voorwarden.</label>
+                </div>
+            </div>
+
+            <div class="col-lg-4"></div>
+
+            <div class="col-lg-4">
+                <h3>Betaling</h3>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="betaling" value="Banking app">
+                    <label class="form-check-label" for="banking">Banking app</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="betaling" value="Overschrijving">
+                    <label class="form-check-label" for="overschrijving">Overschrijving</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="betaling" value="Visa card">
+                    <label class="form-check-label" for="visa">Visa card</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="betaling" id="paypal" value="PayPal">
+                    <label class="form-check-label" for="paypal">PayPal</label>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <hr/>
+            </div>
+            <div class="col-lg-6">
+                <div id="resultaat"></div>
+            </div>
+            <div class="col-lg-6">
+                <div id="meldingBetalingswijze"></div>
+            </div>
+            <div class="col-lg-12">
+                <button type="Button" class="btn btn-primary" id="btnSubmit" onclick="validateForm();">Submit</button>
+            </div>
+        </div>
+    </div>
+    </form>
+    </div>
+
+    </div>
+    <script>
+        var errors = new Array();
+        var x = document.getElementById('resultaat');
+        var land = document.getElementById('land');
+        var provincie = document.getElementById('provincie');
+
+        function validateForm() {
+            // div leegmaken
+            x.innerHTML = "";
+            x.className = "";
+            errors = [];
+            // Valdiatie leeg velden
+            checkEmptyField("voornaam", "Het veld voornaam is vereist.");
+            checkEmptyField("naam", "Het veld naam is vereist.");
+            checkEmptyField("gebruikersnaam", "Het veld gebruikersnaam is vereist.");
+            checkEmptyField("adres", "Het veld adres is vereist.");
+            checkEmptyField("land", "Je moet een land kiezen.");
+            checkEmptyField("provincie", "Je moet een provincie kiezen.");
+            // controle email
+            validateEmail("email");
+            // controle wachtwoord
+            validateWachtwoord("wachtwoord");
+            // controle betalingswijze
+            validatePayment("betaling");
+            // controle postcode
+            checkPC("postcode");
+            // controle algemene voorwaarden
+            if (document.getElementById('voorwaarden').checked == false) {
+                errors.push("Je moet de algemene voorwaarden accepteren.");
+            }
+            //meldingen tonen
+            if (errors.length == 0) {
+                x.className = 'alert alert-success';
+                x.innerHTML = "<h3>Goed gedaan!</h3>"
+                x.innerHTML += "Je werd geregistreerd.";
+            } else {
+                x.className = 'alert alert-danger';
+                x.innerHTML += "<h3>Oei...</h3>";
+                for (let i = 0; i < errors.length; i++) {
+                    x.innerHTML += errors[i] + "<br>";
+                }
+            }
+        }
+
+        function checkEmptyField(veld, melding) {
+            if (document.forms["mijnForm"][veld].value == "") {
+                errors.push(melding);
+            }
+        }
+
+        function validateEmail(emailadres) {
+            // gevonden op: https://www.w3resource.com/javascript/form/email-validation.php
+            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/g;
+            if (document.forms["mijnForm"][emailadres].value.match(mailformat)) {
+                return true;
+            } else {
+                errors.push("E-mail adres is niet correct ingevuld.");
+                return false;
+            }
+        }
+
+        function validateWachtwoord(wachtwoord) {
+            if (document.forms["mijnForm"][wachtwoord].value.length < 7) {
+                errors.push("Wachtwoord moet minstens 7 karakters bevatten.");
+            }
+            if (document.forms["mijnForm"][wachtwoord].value != document.forms["mijnForm"]["herhaalWachtwoord"].value) {
+                errors.push("De wachtwoorden moeten hetzelfde zijn.")
+            }
+            if (document.forms["mijnForm"][wachtwoord].value == "") {
+                errors.push("Wachtwoord is een verplicht veld.");
+            }
+            if (document.forms["mijnForm"]["herhaalWachtwoord"].value == "") {
+                errors.push("Herhaal wachtwoord is een verplicht veld.");
+            }
+        }
+
+        function validatePayment(veld) {
+            // gevonden op: https://stackoverflow.com/questions/9561625/checking-value-of-radio-button-group-via-javascript
+            var betaalmethodes = document.getElementsByName(veld);
+            var geselecteerde;
+            for (let i = 0; i < betaalmethodes.length; i++) {
+                if (betaalmethodes[i].checked) {
+                    geselecteerde = betaalmethodes[i].value;
+                }
+            }
+
+            // gevonden op: https://stackoverflow.com/questions/3390396/how-can-i-check-for-undefined-in-javascript
+            if (typeof geselecteerde == 'undefined') {
+                errors.push("Je moet een van de betaalmethodes kiezen.");
+            } else {
+                document.getElementById('meldingBetalingswijze').className = "alert alert-primary";
+                document.getElementById('meldingBetalingswijze').innerHTML = "<h3>Betalingswijze</h3>"
+                document.getElementById('meldingBetalingswijze').innerHTML += "<p>Je betalingswijze is " + geselecteerde + ".<p>";
+            }
+        }
+
+        function checkPC(veld) {
+            if (document.forms["mijnForm"][veld].value == "") {
+                errors.push("Het veld postcode is vereist.");
+            }
+            if (document.forms["mijnForm"][veld].value <= 1000 || document.forms["mijnForm"][veld].value > 10000) {
+                errors.push("De waarde van postcode moet tussen 1000 en 9999 liggen.");
+            }
+        }
+
+        // aanpassend provincies
+        land.addEventListener('change', (event) => {
+            if (land.value == "Belgie") {
+                provincie.innerHTML =
+                    '<option value="" selected disabled>Kies een provincie</option>' +
+                    '<option value="Antwerpen">Antwerpen</option>' +
+                    '<option value="Henegouwen">Henegouwen</option>' +
+                    '<option value="Limburg">Limburg</option>' +
+                    '<option value="Luik">Luik</option>' +
+                    '<option value="Luxemburg">Luxemburg</option>' +
+                    '<option value="Namen">Namen</option>' +
+                    '<option value="Oost-Vlaanderen">Oost-Vlaanderen</option>' +
+                    '<option value="Vlaams-Brabant">Vlaams-Brabant</option>' +
+                    '<option value="Waals-Brabant">Waals-Brabant</option>' +
+                    '<option value="West-Vlaanderen">West-Vlaanderen</option>';
+            }
+            if (land.value == "Nederland") {
+                provincie.innerHTML =
+                    '<option value="" selected disabled>Kies een provincie</option>' +
+                    '<option value="Groningen">Groningen</option>' +
+                    '<option value="Friesland">Friesland</option>' +
+                    '<option value="Drenthe">Drenthe</option>' +
+                    '<option value="Overijssel">Overijssel</option>' +
+                    '<option value="Flevoland">Flevoland</option>' +
+                    '<option value="Gelderland">Gelderland</option>' +
+                    '<option value="Utrecht">Utrecht</option>' +
+                    '<option value="Noord-Holland">Noord-Holland</option>' +
+                    '<option value="Zuid-Holland">Zuid-Holland</option>' +
+                    '<option value="Zeeland">Zeeland</option>' +
+                    '<option value="Noord-Brabant">Noord-Brabant</option>' +
+                    '<option value="Limburg">Limburg</option>';
+            }
+            if (land.value == "Duitsland") {
+                provincie.innerHTML =
+                    '<option value="" selected disabled>Kies een provincie</option>' +
+                    '<option value="Baden-Wurttemberg">Baden-Wurttemberg</option>' +
+                    '<option value="Bayern">Bayern</option>' +
+                    '<option value="Berlin">Berlin</option>' +
+                    '<option value="Branderburg">Brandenburg</option>' +
+                    '<option value="Bremen">Bremen</option>' +
+                    '<option value="Hamburg">Hamburg</option>' +
+                    '<option value="Hessen">Hessen</option>' +
+                    '<option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>' +
+                    '<option value="Niedersachsen">Niedersachsen</option>' +
+                    '<option value="Noordrhein-Westfalen">Noordrhein-Westfalen</option>' +
+                    '<option value="Rheinland-Pfalz">Rheinland-Pfalz</option>' +
+                    '<option value="Saarland">Saarland</option>' +
+                    '<option value="Sachsen">Sachsen</option>' +
+                    '<option value="Sachsen-Anhalt">Sachsen-Anhalt</option>' +
+                    '<option value="Schleswig-Holstein">Schleswig-Holstein</option>' +
+                    '<option value="Thuringen">Thuringen</option>';
+            }
+            if (land.value == "Frankrijk") {
+                provincie.innerHTML =
+                    '<option value="" selected disabled>Kies een provincie</option>' +
+                    '<option value="Auvergne-Rhone-Alpes">Auvergne-Rhone-Alpes</option>' +
+                    '<option value="Bourgogne-Franche-Comte">Bourgogne-Franche-Comte</option>' +
+                    '<option value="Bretagne">Bretagne</option>' +
+                    '<option value="Centre-Val de Loire">Centre-Val de Loire</option>' +
+                    '<option value="Grand Est">Grand Est</option>' +
+                    '<option value="Hauts-de-France">Hauts-de-France</option>' +
+                    '<option value="Ile-de-France">Ile-de-France</option>' +
+                    '<option value="Normandie">Normandie</option>' +
+                    '<option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>' +
+                    '<option value="Occitanie">Occitanie</option>' +
+                    '<option value="Pays de la Loire-Pfalz">Pays de la Loire</option>' +
+                    '<option value="Provence-Alpes-Cote d\'Azur">Provence-Alpes-Cote d\'Azur</option>';
+            }
+            if (land.value == "Verenigde Koninkrijk") {
+                provincie.innerHTML =
+                    '<option value="" selected disabled>Kies een provincie</option>' +
+                    '<option value="Scotland">Scotland</option>' +
+                    '<option value="Northern Ireland">Northern Ireland</option>' +
+                    '<option value="Wales">Wales</option>' +
+                    '<option value="North East">North East</option>' +
+                    '<option value="North West">North West</option>' +
+                    '<option value="Yorkshire and the Humber">Yorkshire and the Humber</option>' +
+                    '<option value="West Midlands">West Midlands</option>' +
+                    '<option value="East Midlands">East Midlands</option>' +
+                    '<option value="South West">South West</option>' +
+                    '<option value="South East">South East</option>' +
+                    '<option value="East of England">East of England</option>' +
+                    '<option value="Greater London">Greater London</option>';
+            }
+
+        });
+    </script>
+</body>
+
+</html>

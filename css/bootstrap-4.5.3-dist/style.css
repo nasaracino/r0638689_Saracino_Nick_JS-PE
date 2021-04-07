@@ -1,0 +1,22 @@
+h3 {
+    padding-top: 20px;
+}
+
+h5 {
+    padding-bottom: 20px;
+}
+
+#btnSubmit {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#paypal {
+    margin-bottom: 20px;
+}
+
+#labelGebruikersnaam {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
